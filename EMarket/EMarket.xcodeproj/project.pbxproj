@@ -21,6 +21,9 @@
 		029C1BE92BFBB11E0083B5A5 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 029C1BE62BFBB11E0083B5A5 /* Montserrat-Medium.ttf */; };
 		029C1BEA2BFBB11E0083B5A5 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 029C1BE72BFBB11E0083B5A5 /* Montserrat-Regular.ttf */; };
 		029C1BEC2BFBB2090083B5A5 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BEB2BFBB2090083B5A5 /* Font.swift */; };
+		029C1BEF2BFBB2EB0083B5A5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 029C1BEE2BFBB2EB0083B5A5 /* Kingfisher */; };
+		029C1BF22BFBB3070083B5A5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BF12BFBB3070083B5A5 /* Image.swift */; };
+		029C1BF72BFBB3F10083B5A5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BF62BFBB3F10083B5A5 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,8 @@
 		029C1BE62BFBB11E0083B5A5 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		029C1BE72BFBB11E0083B5A5 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		029C1BEB2BFBB2090083B5A5 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		029C1BF12BFBB3070083B5A5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		029C1BF62BFBB3F10083B5A5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029C1BEF2BFBB2EB0083B5A5 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +165,7 @@
 		029C1BD02BFBAD080083B5A5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				029C1BF52BFBB3E40083B5A5 /* Extension */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -220,6 +227,7 @@
 		029C1BDC2BFBADC60083B5A5 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				029C1BF02BFBB2F70083B5A5 /* Image */,
 				029C1BE02BFBB0820083B5A5 /* Font */,
 				029C1BA72BFBAC9D0083B5A5 /* Assets.xcassets */,
 			);
@@ -262,6 +270,22 @@
 			path = Montserrat;
 			sourceTree = "<group>";
 		};
+		029C1BF02BFBB2F70083B5A5 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				029C1BF12BFBB3070083B5A5 /* Image.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		029C1BF52BFBB3E40083B5A5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				029C1BF62BFBB3F10083B5A5 /* UIImageView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,6 +302,9 @@
 			dependencies = (
 			);
 			name = EMarket;
+			packageProductDependencies = (
+				029C1BEE2BFBB2EB0083B5A5 /* Kingfisher */,
+			);
 			productName = EMarket;
 			productReference = 029C1B982BFBAC9C0083B5A5 /* EMarket.app */;
 			productType = "com.apple.product-type.application";
@@ -350,6 +377,9 @@
 				Base,
 			);
 			mainGroup = 029C1B8F2BFBAC9C0083B5A5;
+			packageReferences = (
+				029C1BED2BFBB2EB0083B5A5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 029C1B992BFBAC9C0083B5A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -395,7 +425,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				029C1BE42BFBB0BC0083B5A5 /* FontType.swift in Sources */,
+				029C1BF22BFBB3070083B5A5 /* Image.swift in Sources */,
 				029C1BDF2BFBB0570083B5A5 /* BaseViewController.swift in Sources */,
+				029C1BF72BFBB3F10083B5A5 /* UIImageView+Extension.swift in Sources */,
 				029C1BEC2BFBB2090083B5A5 /* Font.swift in Sources */,
 				029C1BA62BFBAC9C0083B5A5 /* EMarket.xcdatamodeld in Sources */,
 				029C1BDB2BFBAD8D0083B5A5 /* DashboardViewController.swift in Sources */,
@@ -744,6 +776,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		029C1BED2BFBB2EB0083B5A5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		029C1BEE2BFBB2EB0083B5A5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029C1BED2BFBB2EB0083B5A5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		029C1BA42BFBAC9C0083B5A5 /* EMarket.xcdatamodeld */ = {
