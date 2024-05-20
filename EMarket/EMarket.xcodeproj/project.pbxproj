@@ -24,6 +24,8 @@
 		029C1BEF2BFBB2EB0083B5A5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 029C1BEE2BFBB2EB0083B5A5 /* Kingfisher */; };
 		029C1BF22BFBB3070083B5A5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BF12BFBB3070083B5A5 /* Image.swift */; };
 		029C1BF72BFBB3F10083B5A5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BF62BFBB3F10083B5A5 /* UIImageView+Extension.swift */; };
+		029C1C002BFBB8610083B5A5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 029C1BFE2BFBB8610083B5A5 /* Localizable.strings */; };
+		029C1C032BFBB8A50083B5A5 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C022BFBB8A50083B5A5 /* String+Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		029C1BEB2BFBB2090083B5A5 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		029C1BF12BFBB3070083B5A5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		029C1BF62BFBB3F10083B5A5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		029C1BFF2BFBB8610083B5A5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		029C1C012BFBB8760083B5A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		029C1C022BFBB8A50083B5A5 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +232,7 @@
 		029C1BDC2BFBADC60083B5A5 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				029C1BFD2BFBB7950083B5A5 /* Localization */,
 				029C1BF02BFBB2F70083B5A5 /* Image */,
 				029C1BE02BFBB0820083B5A5 /* Font */,
 				029C1BA72BFBAC9D0083B5A5 /* Assets.xcassets */,
@@ -282,8 +288,17 @@
 			isa = PBXGroup;
 			children = (
 				029C1BF62BFBB3F10083B5A5 /* UIImageView+Extension.swift */,
+				029C1C022BFBB8A50083B5A5 /* String+Localization.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		029C1BFD2BFBB7950083B5A5 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				029C1BFE2BFBB8610083B5A5 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,11 +385,12 @@
 			};
 			buildConfigurationList = 029C1B932BFBAC9C0083B5A5 /* Build configuration list for PBXProject "EMarket" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = tr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 029C1B8F2BFBAC9C0083B5A5;
 			packageReferences = (
@@ -396,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029C1C002BFBB8610083B5A5 /* Localizable.strings in Resources */,
 				029C1BEA2BFBB11E0083B5A5 /* Montserrat-Regular.ttf in Resources */,
 				029C1BE82BFBB11E0083B5A5 /* Montserrat-SemiBold.ttf in Resources */,
 				029C1BE92BFBB11E0083B5A5 /* Montserrat-Medium.ttf in Resources */,
@@ -433,6 +450,7 @@
 				029C1BDB2BFBAD8D0083B5A5 /* DashboardViewController.swift in Sources */,
 				029C1B9C2BFBAC9C0083B5A5 /* AppDelegate.swift in Sources */,
 				029C1B9E2BFBAC9C0083B5A5 /* SceneDelegate.swift in Sources */,
+				029C1C032BFBB8A50083B5A5 /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +485,18 @@
 			targetProxy = 029C1BBC2BFBAC9E0083B5A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		029C1BFE2BFBB8610083B5A5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				029C1BFF2BFBB8610083B5A5 /* tr */,
+				029C1C012BFBB8760083B5A5 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		029C1BC32BFBAC9E0083B5A5 /* Debug */ = {
@@ -602,6 +632,7 @@
 				INFOPLIST_FILE = EMarket/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "E-Market";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -637,6 +668,7 @@
 				INFOPLIST_FILE = EMarket/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "E-Market";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -669,6 +701,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M8Y74S5JTU;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemaltuysuz.emarket.EMarketTests;
@@ -689,6 +722,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M8Y74S5JTU;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemaltuysuz.emarket.EMarketTests;
@@ -708,6 +742,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M8Y74S5JTU;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemaltuysuz.emarket.EMarketUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -726,6 +761,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M8Y74S5JTU;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemaltuysuz.emarket.EMarketUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
