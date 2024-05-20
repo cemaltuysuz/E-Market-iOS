@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		029C1B9C2BFBAC9C0083B5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1B9B2BFBAC9C0083B5A5 /* AppDelegate.swift */; };
 		029C1B9E2BFBAC9C0083B5A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1B9D2BFBAC9C0083B5A5 /* SceneDelegate.swift */; };
-		029C1BA02BFBAC9C0083B5A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1B9F2BFBAC9C0083B5A5 /* ViewController.swift */; };
-		029C1BA32BFBAC9C0083B5A5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 029C1BA22BFBAC9C0083B5A5 /* Base */; };
 		029C1BA62BFBAC9C0083B5A5 /* EMarket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BA42BFBAC9C0083B5A5 /* EMarket.xcdatamodeld */; };
 		029C1BA82BFBAC9D0083B5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029C1BA72BFBAC9D0083B5A5 /* Assets.xcassets */; };
 		029C1BB62BFBAC9E0083B5A5 /* EMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BB52BFBAC9E0083B5A5 /* EMarketTests.swift */; };
 		029C1BC02BFBAC9E0083B5A5 /* EMarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BBF2BFBAC9E0083B5A5 /* EMarketUITests.swift */; };
 		029C1BC22BFBAC9E0083B5A5 /* EMarketUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BC12BFBAC9E0083B5A5 /* EMarketUITestsLaunchTests.swift */; };
+		029C1BDB2BFBAD8D0083B5A5 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BDA2BFBAD8D0083B5A5 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,6 @@
 		029C1B982BFBAC9C0083B5A5 /* EMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		029C1B9B2BFBAC9C0083B5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		029C1B9D2BFBAC9C0083B5A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		029C1B9F2BFBAC9C0083B5A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		029C1BA22BFBAC9C0083B5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		029C1BA52BFBAC9C0083B5A5 /* EMarket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EMarket.xcdatamodel; sourceTree = "<group>"; };
 		029C1BA72BFBAC9D0083B5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		029C1BAC2BFBAC9D0083B5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		029C1BBB2BFBAC9E0083B5A5 /* EMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		029C1BBF2BFBAC9E0083B5A5 /* EMarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMarketUITests.swift; sourceTree = "<group>"; };
 		029C1BC12BFBAC9E0083B5A5 /* EMarketUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMarketUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		029C1BDA2BFBAD8D0083B5A5 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +97,9 @@
 		029C1B9A2BFBAC9C0083B5A5 /* EMarket */ = {
 			isa = PBXGroup;
 			children = (
-				029C1B9B2BFBAC9C0083B5A5 /* AppDelegate.swift */,
-				029C1B9D2BFBAC9C0083B5A5 /* SceneDelegate.swift */,
-				029C1B9F2BFBAC9C0083B5A5 /* ViewController.swift */,
-				029C1BA12BFBAC9C0083B5A5 /* Main.storyboard */,
-				029C1BA72BFBAC9D0083B5A5 /* Assets.xcassets */,
+				029C1BCE2BFBACF50083B5A5 /* App */,
+				029C1BCF2BFBACFC0083B5A5 /* Source */,
+				029C1BDC2BFBADC60083B5A5 /* Assets */,
 				029C1BAC2BFBAC9D0083B5A5 /* Info.plist */,
 				029C1BA42BFBAC9C0083B5A5 /* EMarket.xcdatamodeld */,
 			);
@@ -125,6 +121,95 @@
 				029C1BC12BFBAC9E0083B5A5 /* EMarketUITestsLaunchTests.swift */,
 			);
 			path = EMarketUITests;
+			sourceTree = "<group>";
+		};
+		029C1BCE2BFBACF50083B5A5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				029C1B9B2BFBAC9C0083B5A5 /* AppDelegate.swift */,
+				029C1B9D2BFBAC9C0083B5A5 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		029C1BCF2BFBACFC0083B5A5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				029C1BD12BFBAD0C0083B5A5 /* Model */,
+				029C1BD32BFBAD1A0083B5A5 /* View */,
+				029C1BD42BFBAD240083B5A5 /* ViewModel */,
+				029C1BD52BFBAD300083B5A5 /* Repository */,
+				029C1BD02BFBAD080083B5A5 /* Core */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		029C1BD02BFBAD080083B5A5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		029C1BD12BFBAD0C0083B5A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		029C1BD32BFBAD1A0083B5A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				029C1BD82BFBAD770083B5A5 /* ViewControllers */,
+				029C1BD72BFBAD6B0083B5A5 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		029C1BD42BFBAD240083B5A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		029C1BD52BFBAD300083B5A5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		029C1BD72BFBAD6B0083B5A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		029C1BD82BFBAD770083B5A5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				029C1BD92BFBAD820083B5A5 /* Dashboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		029C1BD92BFBAD820083B5A5 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				029C1BDA2BFBAD8D0083B5A5 /* DashboardViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		029C1BDC2BFBADC60083B5A5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				029C1BA72BFBAC9D0083B5A5 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +317,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				029C1BA82BFBAC9D0083B5A5 /* Assets.xcassets in Resources */,
-				029C1BA32BFBAC9C0083B5A5 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +341,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				029C1BA02BFBAC9C0083B5A5 /* ViewController.swift in Sources */,
 				029C1BA62BFBAC9C0083B5A5 /* EMarket.xcdatamodeld in Sources */,
+				029C1BDB2BFBAD8D0083B5A5 /* DashboardViewController.swift in Sources */,
 				029C1B9C2BFBAC9C0083B5A5 /* AppDelegate.swift in Sources */,
 				029C1B9E2BFBAC9C0083B5A5 /* SceneDelegate.swift in Sources */,
 			);
@@ -295,17 +379,6 @@
 			targetProxy = 029C1BBC2BFBAC9E0083B5A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		029C1BA12BFBAC9C0083B5A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				029C1BA22BFBAC9C0083B5A5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		029C1BC32BFBAC9E0083B5A5 /* Debug */ = {
@@ -360,6 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -417,6 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -440,8 +515,8 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "E-Market";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -475,8 +550,8 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "E-Market";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
