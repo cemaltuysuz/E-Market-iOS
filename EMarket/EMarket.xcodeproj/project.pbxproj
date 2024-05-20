@@ -39,6 +39,8 @@
 		029C1C202BFBD1C90083B5A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C1F2BFBD1C90083B5A5 /* ViewController.swift */; };
 		029C1C232BFBD33F0083B5A5 /* ProductListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C222BFBD33F0083B5A5 /* ProductListingViewController.swift */; };
 		029C1C272BFBD3850083B5A5 /* ProductListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C262BFBD3850083B5A5 /* ProductListingViewModel.swift */; };
+		029C1C2A2BFBD7070083B5A5 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C292BFBD7070083B5A5 /* ProductDetailViewController.swift */; };
+		029C1C2D2BFBD72F0083B5A5 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C2C2BFBD72F0083B5A5 /* ProductDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		029C1C1F2BFBD1C90083B5A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		029C1C222BFBD33F0083B5A5 /* ProductListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewController.swift; sourceTree = "<group>"; };
 		029C1C262BFBD3850083B5A5 /* ProductListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModel.swift; sourceTree = "<group>"; };
+		029C1C292BFBD7070083B5A5 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		029C1C2C2BFBD72F0083B5A5 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +225,7 @@
 		029C1BD42BFBAD240083B5A5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				029C1C2B2BFBD7200083B5A5 /* ProductDetail */,
 				029C1C252BFBD3650083B5A5 /* ProductListing */,
 				029C1C242BFBD35B0083B5A5 /* Base */,
 			);
@@ -244,6 +249,7 @@
 		029C1BD82BFBAD770083B5A5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				029C1C282BFBD6F30083B5A5 /* ProductDetail */,
 				029C1C212BFBD2A20083B5A5 /* ProductListing */,
 				029C1BDD2BFBB0070083B5A5 /* Base */,
 				029C1BD92BFBAD820083B5A5 /* MainTabBar */,
@@ -404,6 +410,22 @@
 			path = ProductListing;
 			sourceTree = "<group>";
 		};
+		029C1C282BFBD6F30083B5A5 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C292BFBD7070083B5A5 /* ProductDetailViewController.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		029C1C2B2BFBD7200083B5A5 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C2C2BFBD72F0083B5A5 /* ProductDetailViewModel.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -549,6 +571,7 @@
 				029C1C192BFBBE470083B5A5 /* NetworkRequest.swift in Sources */,
 				029C1BDF2BFBB0570083B5A5 /* BaseViewController.swift in Sources */,
 				029C1C272BFBD3850083B5A5 /* ProductListingViewModel.swift in Sources */,
+				029C1C2A2BFBD7070083B5A5 /* ProductDetailViewController.swift in Sources */,
 				029C1C052BFBBC3D0083B5A5 /* ViewModel.swift in Sources */,
 				029C1BF72BFBB3F10083B5A5 /* UIImageView+Extension.swift in Sources */,
 				029C1C162BFBBE470083B5A5 /* NetworkErrorModel.swift in Sources */,
@@ -566,6 +589,7 @@
 				029C1C202BFBD1C90083B5A5 /* ViewController.swift in Sources */,
 				029C1C232BFBD33F0083B5A5 /* ProductListingViewController.swift in Sources */,
 				029C1C032BFBB8A50083B5A5 /* String+Localization.swift in Sources */,
+				029C1C2D2BFBD72F0083B5A5 /* ProductDetailViewModel.swift in Sources */,
 				029C1C172BFBBE470083B5A5 /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

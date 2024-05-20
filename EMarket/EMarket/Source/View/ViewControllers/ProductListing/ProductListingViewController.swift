@@ -12,7 +12,5 @@ final class ProductListingViewController: ViewController<ProductListingViewModel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 }
