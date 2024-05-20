@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - ViewModel
-class ViewModel {
-    
+open class ViewModel {
+    var onErrorReceived: ((NetworkErrorModel) ->Void)?
+    var askRequestRepeat: ((@escaping(()-> Void)) -> Void)?
 }
