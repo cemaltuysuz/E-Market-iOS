@@ -29,13 +29,17 @@ final class NetworkManager: NetworkManagerProtocol {
                 guard
                     self.isResponseOK(response)
                 else {
-                    return completionHandler(.failure(.init(with: .failedResponse, message: "Backend did not return a positive response.".localized)))
+                    return completionHandler(
+                        .failure(.init(with: .failedResponse, message: "network.backend_did_not_response_ok".localized))
+                    )
                 }
                 // Parse Model
                 if let data = data, let response = try? JSONDecoder().decode(T.self, from: data){
                     return completionHandler(.success(response))
                 }
-                return completionHandler(.failure(.init(with: .parseError, message: "Response model could not be parsed".localized)))
+                return completionHandler(
+                    .failure(.init(with: .parseError, message: "network.response_model_could_not_parsed".localized))
+                )
             }
             .resume()
             

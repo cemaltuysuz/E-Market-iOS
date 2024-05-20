@@ -5,3 +5,6 @@
   Created by Cemal on 20.05.2024.
   
 */
+
+"network.backend_did_not_response_ok" = "An error occured. Please try again. (-1)";
+"network.response_model_could_not_parsed" = "An error occured. Please try again. (-2)";

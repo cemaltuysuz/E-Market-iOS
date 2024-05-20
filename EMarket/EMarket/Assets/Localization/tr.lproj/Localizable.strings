@@ -5,3 +5,7 @@
   Created by Cemal on 20.05.2024.
   
 */
+
+"network.backend_did_not_response_ok" = "Bir hata oluştu, lütfen daha sonra tekrar deneyiniz. (-1)";
+"network.response_model_could_not_parsed" = "Bir hata oluştu, lütfen daha sonra tekrar deneyiniz. (-2)";
+
