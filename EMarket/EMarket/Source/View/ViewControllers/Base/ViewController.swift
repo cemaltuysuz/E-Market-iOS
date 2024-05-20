@@ -25,22 +25,22 @@ open class ViewController<T: ViewModel>: BaseViewController {
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-        
+    
     private func configureBaseBindings() {
         viewModel.askRequestRepeat = {[weak self] shouldRepeat in
-            self?.showAlert(title: "Request Failed".localized,
-                            description: "Your request has been failed. Do you want to try again ?".localized,
-                            possitiveButtonText: "Yes".localized,
-                            negativeButtonText: "No".localized,
+            self?.showAlert(title: "general.error".localized,
+                            description: "network.error.try_again".localized,
+                            possitiveButtonText: "general.yes".localized,
+                            negativeButtonText: "general.no".localized,
                             onClickedPossitveButton: {
                 shouldRepeat()
             })
         }
         
         viewModel.onErrorReceived = {[weak self] error in
-            self?.showAlert(title: "Request Failed".localized,
-                            description: "Your request has been failed. Please, try again later.".localized,
-                            possitiveButtonText: "Close".localized)
+            self?.showAlert(title: "general.error".localized,
+                            description: "network.error".localized,
+                            possitiveButtonText: "general.close".localized)
         }
     }
 }

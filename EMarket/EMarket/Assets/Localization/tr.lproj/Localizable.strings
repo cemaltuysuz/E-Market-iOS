@@ -6,6 +6,15 @@
   
 */
 
+// MARK: - General
+"general.error" = "Hata";
+"general.yes" = "Evet";
+"general.no" = "Hayır";
+"general.close" = "Kapat";
+
+// MARK: - Network
+"network.error" = "Bir hata oluştu ve bu işlem gerçekleşmedi.";
+"network.error.try_again" = "Bir hata oluştu ve bu işlem gerçekleşmedi. Tekrar denemek ister misin ?";
 "network.backend_did_not_response_ok" = "Bir hata oluştu, lütfen daha sonra tekrar deneyiniz. (-1)";
 "network.response_model_could_not_parsed" = "Bir hata oluştu, lütfen daha sonra tekrar deneyiniz. (-2)";
 
