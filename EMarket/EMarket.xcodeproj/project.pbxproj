@@ -26,6 +26,7 @@
 		029C1BF72BFBB3F10083B5A5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1BF62BFBB3F10083B5A5 /* UIImageView+Extension.swift */; };
 		029C1C002BFBB8610083B5A5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 029C1BFE2BFBB8610083B5A5 /* Localizable.strings */; };
 		029C1C032BFBB8A50083B5A5 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C022BFBB8A50083B5A5 /* String+Localization.swift */; };
+		029C1C052BFBBC3D0083B5A5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C042BFBBC3D0083B5A5 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		029C1BFF2BFBB8610083B5A5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		029C1C012BFBB8760083B5A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		029C1C022BFBB8A50083B5A5 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		029C1C042BFBBC3D0083B5A5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 		029C1BD42BFBAD240083B5A5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				029C1C042BFBBC3D0083B5A5 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				029C1BE42BFBB0BC0083B5A5 /* FontType.swift in Sources */,
 				029C1BF22BFBB3070083B5A5 /* Image.swift in Sources */,
 				029C1BDF2BFBB0570083B5A5 /* BaseViewController.swift in Sources */,
+				029C1C052BFBBC3D0083B5A5 /* ViewModel.swift in Sources */,
 				029C1BF72BFBB3F10083B5A5 /* UIImageView+Extension.swift in Sources */,
 				029C1BEC2BFBB2090083B5A5 /* Font.swift in Sources */,
 				029C1BA62BFBAC9C0083B5A5 /* EMarket.xcdatamodeld in Sources */,
