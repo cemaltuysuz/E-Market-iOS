@@ -9,15 +9,41 @@ import UIKit
 
 // MARK: - BaseViewController
 open class BaseViewController: UIViewController {
-
+    
+    private lazy var leftNavBarTitleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.font = Font.font(.montSemiBold, size: 24.0)
+        label.text = Constant.Defaults.pageTitle
+        label.textColor = .white
+        return label
+    }()
+    
+    open var pageTitle: String? {
+        willSet {
+            leftNavBarTitleLabel.text = newValue
+        }
+    }
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupNavigationBar()
     }
 
     private func setupUI() {
         view.backgroundColor = .viewControllerBackground
+    }
+}
+
+// MARK: - Private Methods
+private extension BaseViewController {
+    func setupNavigationBar() {
         navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.backgroundColor = .blue900
+        navigationItem.leftItemsSupplementBackButton = true
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftNavBarTitleLabel)
     }
 }
 
