@@ -47,6 +47,9 @@
 		029C1C382BFC8E8B0083B5A5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C372BFC8E8B0083B5A5 /* Constant.swift */; };
 		029C1C3A2BFC8EB20083B5A5 /* Constant+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C392BFC8EB20083B5A5 /* Constant+Defaults.swift */; };
 		029C1C3E2BFC91C90083B5A5 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C3D2BFC91C90083B5A5 /* BaseNavigationController.swift */; };
+		029C1C402BFC95590083B5A5 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C3F2BFC95590083B5A5 /* BaseView.swift */; };
+		029C1C472BFC98410083B5A5 /* SlowTypeSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C462BFC98410083B5A5 /* SlowTypeSearchBarView.swift */; };
+		029C1C492BFC98540083B5A5 /* SlowTypeSearchBarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C482BFC98540083B5A5 /* SlowTypeSearchBarViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		029C1C372BFC8E8B0083B5A5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		029C1C392BFC8EB20083B5A5 /* Constant+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+Defaults.swift"; sourceTree = "<group>"; };
 		029C1C3D2BFC91C90083B5A5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		029C1C3F2BFC95590083B5A5 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		029C1C462BFC98410083B5A5 /* SlowTypeSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowTypeSearchBarView.swift; sourceTree = "<group>"; };
+		029C1C482BFC98540083B5A5 /* SlowTypeSearchBarViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowTypeSearchBarViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +262,8 @@
 		029C1BD72BFBAD6B0083B5A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				029C1C422BFC97C70083B5A5 /* SlowTypeSearchBarView */,
+				029C1C412BFC97BD0083B5A5 /* Base */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -468,6 +476,23 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
+		029C1C412BFC97BD0083B5A5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C3F2BFC95590083B5A5 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		029C1C422BFC97C70083B5A5 /* SlowTypeSearchBarView */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C462BFC98410083B5A5 /* SlowTypeSearchBarView.swift */,
+				029C1C482BFC98540083B5A5 /* SlowTypeSearchBarViewDelegate.swift */,
+			);
+			path = SlowTypeSearchBarView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -608,6 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029C1C472BFC98410083B5A5 /* SlowTypeSearchBarView.swift in Sources */,
 				029C1BE42BFBB0BC0083B5A5 /* FontType.swift in Sources */,
 				029C1BF22BFBB3070083B5A5 /* Image.swift in Sources */,
 				029C1C312BFBD7B10083B5A5 /* BasketViewController.swift in Sources */,
@@ -635,10 +661,12 @@
 				029C1B9E2BFBAC9C0083B5A5 /* SceneDelegate.swift in Sources */,
 				029C1C202BFBD1C90083B5A5 /* ViewController.swift in Sources */,
 				029C1C232BFBD33F0083B5A5 /* ProductListingViewController.swift in Sources */,
+				029C1C492BFC98540083B5A5 /* SlowTypeSearchBarViewDelegate.swift in Sources */,
 				029C1C3E2BFC91C90083B5A5 /* BaseNavigationController.swift in Sources */,
 				029C1C032BFBB8A50083B5A5 /* String+Localization.swift in Sources */,
 				029C1C2D2BFBD72F0083B5A5 /* ProductDetailViewModel.swift in Sources */,
 				029C1C172BFBBE470083B5A5 /* NetworkResult.swift in Sources */,
+				029C1C402BFC95590083B5A5 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
