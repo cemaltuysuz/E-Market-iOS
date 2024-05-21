@@ -46,6 +46,7 @@
 		029C1C352BFBD9AF0083B5A5 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C342BFBD9AF0083B5A5 /* ImageAsset.swift */; };
 		029C1C382BFC8E8B0083B5A5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C372BFC8E8B0083B5A5 /* Constant.swift */; };
 		029C1C3A2BFC8EB20083B5A5 /* Constant+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C392BFC8EB20083B5A5 /* Constant+Defaults.swift */; };
+		029C1C3E2BFC91C90083B5A5 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C3D2BFC91C90083B5A5 /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		029C1C342BFBD9AF0083B5A5 /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 		029C1C372BFC8E8B0083B5A5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		029C1C392BFC8EB20083B5A5 /* Constant+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+Defaults.swift"; sourceTree = "<group>"; };
+		029C1C3D2BFC91C90083B5A5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +296,7 @@
 			children = (
 				029C1BDE2BFBB0570083B5A5 /* BaseViewController.swift */,
 				029C1C1F2BFBD1C90083B5A5 /* ViewController.swift */,
+				029C1C3D2BFC91C90083B5A5 /* BaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -632,6 +635,7 @@
 				029C1B9E2BFBAC9C0083B5A5 /* SceneDelegate.swift in Sources */,
 				029C1C202BFBD1C90083B5A5 /* ViewController.swift in Sources */,
 				029C1C232BFBD33F0083B5A5 /* ProductListingViewController.swift in Sources */,
+				029C1C3E2BFC91C90083B5A5 /* BaseNavigationController.swift in Sources */,
 				029C1C032BFBB8A50083B5A5 /* String+Localization.swift in Sources */,
 				029C1C2D2BFBD72F0083B5A5 /* ProductDetailViewModel.swift in Sources */,
 				029C1C172BFBBE470083B5A5 /* NetworkResult.swift in Sources */,

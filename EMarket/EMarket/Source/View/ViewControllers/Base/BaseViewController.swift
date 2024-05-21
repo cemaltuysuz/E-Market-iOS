@@ -40,8 +40,6 @@ open class BaseViewController: UIViewController {
 // MARK: - Private Methods
 private extension BaseViewController {
     func setupNavigationBar() {
-        navigationController?.navigationBar.prefersLargeTitles = false
-        navigationController?.navigationBar.backgroundColor = .blue900
         navigationItem.leftItemsSupplementBackButton = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftNavBarTitleLabel)
     }

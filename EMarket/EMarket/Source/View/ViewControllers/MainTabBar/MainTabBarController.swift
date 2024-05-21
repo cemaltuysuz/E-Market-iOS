@@ -46,8 +46,8 @@ private extension MainTabBarController {
         )
         
         viewControllers = [
-            UINavigationController(rootViewController: productListingVC),
-            UINavigationController(rootViewController: basketVC)
+            BaseNavigationController(rootViewController: productListingVC),
+            BaseNavigationController(rootViewController: basketVC)
         ]
     }
 }

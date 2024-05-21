@@ -11,4 +11,5 @@ import Foundation
 enum ImageAsset: String {
     case icHome
     case icBasket
+    case icBack
 }
