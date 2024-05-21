@@ -18,5 +18,8 @@
 "network.backend_did_not_response_ok" = "Bir hata oluştu, lütfen daha sonra tekrar deneyiniz. (-1)";
 "network.response_model_could_not_parsed" = "Bir hata oluştu, lütfen daha sonra tekrar deneyiniz. (-2)";
 
-// MARK: - Product Listing
+// MARK: - ProductListingVC
 "product_listing.search_bar.placeholder_text" = "Ara";
+
+// MARK: - ProductListingViewCell
+"product_listing_view_cell.add_to_cart_button.title" = "Sepete Ekle";

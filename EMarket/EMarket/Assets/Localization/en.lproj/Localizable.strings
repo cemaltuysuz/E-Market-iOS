@@ -20,4 +20,5 @@
 
 // MARK: - Product Listing
 "product_listing.search_bar.placeholder_text" = "Search";
+"product_listing_view_cell.add_to_cart_button.title" = "Add To Cart";
 
