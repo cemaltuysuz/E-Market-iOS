@@ -10,6 +10,16 @@ import Kingfisher
 
 // MARK: - Image
 final class Image {
+    
+    /// Fetch image from local (implemented into the project)
+    /// - Parameter type: ImageAsset for select an image.
+    /// - Returns: Requested UIImage, if image doesnt exist, an error will occur.
+    static func load(
+        library type: ImageAsset
+    ) -> UIImage {
+        return UIImage(named: type.rawValue)!
+    }
+    
     /// Fetch an image from remote
     /// - Parameters:
     ///   - url: String value for remote address.

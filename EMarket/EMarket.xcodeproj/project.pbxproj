@@ -41,6 +41,11 @@
 		029C1C272BFBD3850083B5A5 /* ProductListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C262BFBD3850083B5A5 /* ProductListingViewModel.swift */; };
 		029C1C2A2BFBD7070083B5A5 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C292BFBD7070083B5A5 /* ProductDetailViewController.swift */; };
 		029C1C2D2BFBD72F0083B5A5 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C2C2BFBD72F0083B5A5 /* ProductDetailViewModel.swift */; };
+		029C1C312BFBD7B10083B5A5 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C302BFBD7B10083B5A5 /* BasketViewController.swift */; };
+		029C1C332BFBD7D00083B5A5 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C322BFBD7D00083B5A5 /* BasketViewModel.swift */; };
+		029C1C352BFBD9AF0083B5A5 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C342BFBD9AF0083B5A5 /* ImageAsset.swift */; };
+		029C1C382BFC8E8B0083B5A5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C372BFC8E8B0083B5A5 /* Constant.swift */; };
+		029C1C3A2BFC8EB20083B5A5 /* Constant+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C392BFC8EB20083B5A5 /* Constant+Defaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,11 @@
 		029C1C262BFBD3850083B5A5 /* ProductListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModel.swift; sourceTree = "<group>"; };
 		029C1C292BFBD7070083B5A5 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		029C1C2C2BFBD72F0083B5A5 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		029C1C302BFBD7B10083B5A5 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		029C1C322BFBD7D00083B5A5 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
+		029C1C342BFBD9AF0083B5A5 /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
+		029C1C372BFC8E8B0083B5A5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		029C1C392BFC8EB20083B5A5 /* Constant+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+Defaults.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +210,7 @@
 		029C1BD02BFBAD080083B5A5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				029C1C362BFC8E7F0083B5A5 /* Constant */,
 				029C1C142BFBBE470083B5A5 /* Network */,
 				029C1BF52BFBB3E40083B5A5 /* Extension */,
 			);
@@ -225,6 +236,7 @@
 		029C1BD42BFBAD240083B5A5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				029C1C2F2BFBD7A20083B5A5 /* Basket */,
 				029C1C2B2BFBD7200083B5A5 /* ProductDetail */,
 				029C1C252BFBD3650083B5A5 /* ProductListing */,
 				029C1C242BFBD35B0083B5A5 /* Base */,
@@ -249,6 +261,7 @@
 		029C1BD82BFBAD770083B5A5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				029C1C2E2BFBD79A0083B5A5 /* Basket */,
 				029C1C282BFBD6F30083B5A5 /* ProductDetail */,
 				029C1C212BFBD2A20083B5A5 /* ProductListing */,
 				029C1BDD2BFBB0070083B5A5 /* Base */,
@@ -317,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				029C1BF12BFBB3070083B5A5 /* Image.swift */,
+				029C1C342BFBD9AF0083B5A5 /* ImageAsset.swift */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -424,6 +438,31 @@
 				029C1C2C2BFBD72F0083B5A5 /* ProductDetailViewModel.swift */,
 			);
 			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		029C1C2E2BFBD79A0083B5A5 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C302BFBD7B10083B5A5 /* BasketViewController.swift */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		029C1C2F2BFBD7A20083B5A5 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C322BFBD7D00083B5A5 /* BasketViewModel.swift */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		029C1C362BFC8E7F0083B5A5 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C372BFC8E8B0083B5A5 /* Constant.swift */,
+				029C1C392BFC8EB20083B5A5 /* Constant+Defaults.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,6 +607,7 @@
 			files = (
 				029C1BE42BFBB0BC0083B5A5 /* FontType.swift in Sources */,
 				029C1BF22BFBB3070083B5A5 /* Image.swift in Sources */,
+				029C1C312BFBD7B10083B5A5 /* BasketViewController.swift in Sources */,
 				029C1C192BFBBE470083B5A5 /* NetworkRequest.swift in Sources */,
 				029C1BDF2BFBB0570083B5A5 /* BaseViewController.swift in Sources */,
 				029C1C272BFBD3850083B5A5 /* ProductListingViewModel.swift in Sources */,
@@ -575,10 +615,14 @@
 				029C1C052BFBBC3D0083B5A5 /* ViewModel.swift in Sources */,
 				029C1BF72BFBB3F10083B5A5 /* UIImageView+Extension.swift in Sources */,
 				029C1C162BFBBE470083B5A5 /* NetworkErrorModel.swift in Sources */,
+				029C1C382BFC8E8B0083B5A5 /* Constant.swift in Sources */,
 				029C1C182BFBBE470083B5A5 /* NetworkHttpType.swift in Sources */,
 				029C1BEC2BFBB2090083B5A5 /* Font.swift in Sources */,
 				029C1BA62BFBAC9C0083B5A5 /* EMarket.xcdatamodeld in Sources */,
+				029C1C332BFBD7D00083B5A5 /* BasketViewModel.swift in Sources */,
+				029C1C352BFBD9AF0083B5A5 /* ImageAsset.swift in Sources */,
 				029C1C1B2BFBBE470083B5A5 /* NetworkManagerProtocol.swift in Sources */,
+				029C1C3A2BFC8EB20083B5A5 /* Constant+Defaults.swift in Sources */,
 				029C1C1A2BFBBE470083B5A5 /* NetworkManager.swift in Sources */,
 				029C1C1E2BFBBE470083B5A5 /* NetworkServiceConfig.swift in Sources */,
 				029C1BDB2BFBAD8D0083B5A5 /* MainTabBarController.swift in Sources */,
