@@ -105,10 +105,10 @@ extension ProductListingView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let product = products[safe: indexPath.row] else { return }
-        // TODO: Route to product detail page
+        delegate?.productListingView(view: self, routeTo: product)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
+        // TODO: - Infinity Scroll
     }
 }
