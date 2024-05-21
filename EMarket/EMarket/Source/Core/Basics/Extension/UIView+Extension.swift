@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: - UIView + SafeArea
+// MARK: - UIView + Extensions
 extension UIView {
     var safeTrailingAnchor: NSLayoutXAxisAnchor {
         safeAreaLayoutGuide.trailingAnchor
@@ -20,6 +20,16 @@ extension UIView {
     }
     var safeTopAnchor: NSLayoutYAxisAnchor {
         safeAreaLayoutGuide.topAnchor
+    }
+    
+    var layerCornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.masksToBounds = newValue > 0
+            layer.cornerRadius = newValue
+        }
     }
 }
 

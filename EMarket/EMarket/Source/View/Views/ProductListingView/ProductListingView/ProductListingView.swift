@@ -11,15 +11,26 @@ import UIKit
 final class ProductListingView: BaseView {
     
     // MARK: - UI Components
-    private var productsCollectionView: UICollectionView = UICollectionView(
-        frame: .zero,
-        collectionViewLayout: UICollectionViewLayout()
-    )
+    private lazy var productsCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = productCellMargin
+        layout.minimumLineSpacing = productCellMargin
+        layout.scrollDirection = .vertical
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(ProductListingViewCell.self)
+        collectionView.contentInset = .init(top: collectionViewInset, left: collectionViewInset, bottom: collectionViewInset, right: collectionViewInset)
+        collectionView.showsVerticalScrollIndicator = false
+        return collectionView
+    }()
     
     // MARK: - Constants
     private let singleLineProductCount: Int
     private let productCellMargin: CGFloat = 15.0
     private let cellHeightRatio: CGFloat = 1.776
+    private let collectionViewInset: CGFloat = 5.0
     
     // MARK: - Data
     private var products: [Product] = []
@@ -46,29 +57,24 @@ final class ProductListingView: BaseView {
 
 // MARK: - Configure UI
 extension ProductListingView {
-    func configure(with productList: [Product]) {
-        
+    func configure(with products: [Product]) {
+        self.products = products
+        productsCollectionView.reloadData()
     }
 }
 
 // MARK: - Setup UI
 private extension ProductListingView {
     func setupProductsCollectionView() {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        layout.minimumInteritemSpacing = productCellMargin
-        layout.minimumLineSpacing = productCellMargin
-        productsCollectionView.collectionViewLayout = layout
-        
-        productsCollectionView.delegate = self
-        productsCollectionView.dataSource = self
-        productsCollectionView.register(ProductListingViewCell.self)
-        setupConstraintsOfProductsCollectionView()
-    }
-    
-    func setupConstraintsOfProductsCollectionView() {
         addSubview(productsCollectionView)
-        productsCollectionView.pinToSuperView()
+        productsCollectionView.frame = frame
+        NSLayoutConstraint.activate([
+            productsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: collectionViewInset),
+            productsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -collectionViewInset),
+            productsCollectionView.topAnchor.constraint(equalTo: topAnchor, constant: collectionViewInset),
+            productsCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -collectionViewInset)
+        ])
+        productsCollectionView.layoutIfNeeded()
     }
 }
 
@@ -86,8 +92,12 @@ extension ProductListingView: UICollectionViewDataSource {
 }
 
 extension ProductListingView: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let totalSpacing = (CGFloat(singleLineProductCount - 1) * productCellMargin)
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
+        let totalSpacing = ((CGFloat(singleLineProductCount - 1) * productCellMargin)) + (CGFloat(singleLineProductCount + 1) * collectionViewInset)
         let width = (collectionView.frame.width - totalSpacing) / CGFloat(singleLineProductCount)
         let height = CGFloat(width * cellHeightRatio)
         return CGSize(width: width, height: height)
@@ -99,12 +109,6 @@ extension ProductListingView: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        guard
-//            viewModel.totalCount > collectionView.visibleCells.count,
-//            indexPath.row > viewModel.movies.count - 2
-//        else {
-//            return
-//        }
-//        viewModel.fetchMovies(with: searchBar.text ?? "", isNextPage: true)
+        
     }
 }

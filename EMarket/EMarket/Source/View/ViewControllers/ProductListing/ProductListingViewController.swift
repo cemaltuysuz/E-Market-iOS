@@ -33,6 +33,8 @@ final class ProductListingViewController: ViewController<ProductListingViewModel
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        handleViewModel()
+        viewModel.fetchProducts()
     }
 }
 
@@ -61,6 +63,16 @@ private extension ProductListingViewController {
             productListingView.trailingAnchor.constraint(equalTo: view.safeTrailingAnchor, constant: -pageMargin),
             productListingView.bottomAnchor.constraint(equalTo: view.safeBottomAnchor, constant: -pageMargin)
         ])
+    }
+}
+
+// MARK: - ViewModel Handlers
+private extension ProductListingViewController {
+    func handleViewModel() {
+        viewModel.didProductsLoaded = { [weak self] products in
+            guard let self else { return }
+            self.productListingView.configure(with: products)
+        }
     }
 }
 

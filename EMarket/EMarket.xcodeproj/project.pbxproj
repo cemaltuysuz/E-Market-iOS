@@ -38,7 +38,6 @@
 		029C1C1E2BFBBE470083B5A5 /* NetworkServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C122BFBBE470083B5A5 /* NetworkServiceConfig.swift */; };
 		029C1C202BFBD1C90083B5A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C1F2BFBD1C90083B5A5 /* ViewController.swift */; };
 		029C1C232BFBD33F0083B5A5 /* ProductListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C222BFBD33F0083B5A5 /* ProductListingViewController.swift */; };
-		029C1C272BFBD3850083B5A5 /* ProductListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C262BFBD3850083B5A5 /* ProductListingViewModel.swift */; };
 		029C1C2A2BFBD7070083B5A5 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C292BFBD7070083B5A5 /* ProductDetailViewController.swift */; };
 		029C1C2D2BFBD72F0083B5A5 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C2C2BFBD72F0083B5A5 /* ProductDetailViewModel.swift */; };
 		029C1C312BFBD7B10083B5A5 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C302BFBD7B10083B5A5 /* BasketViewController.swift */; };
@@ -59,6 +58,11 @@
 		029C1C5B2BFCB6AC0083B5A5 /* ProductListingViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C5A2BFCB6AC0083B5A5 /* ProductListingViewCellDelegate.swift */; };
 		029C1C5D2BFCBBE70083B5A5 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C5C2BFCBBE70083B5A5 /* UICollectionView+Extension.swift */; };
 		029C1C5F2BFCBCE80083B5A5 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C5E2BFCBCE80083B5A5 /* Collection+Extension.swift */; };
+		029C1C622BFCCBCC0083B5A5 /* ProductListingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C612BFCCBCB0083B5A5 /* ProductListingRepository.swift */; };
+		029C1C642BFCCBD50083B5A5 /* ProductListingRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C632BFCCBD50083B5A5 /* ProductListingRepositoryImpl.swift */; };
+		029C1C672BFCCBF30083B5A5 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C662BFCCBF30083B5A5 /* BaseRepository.swift */; };
+		029C1C6C2BFCCD5F0083B5A5 /* NetworkService+Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C6B2BFCCD5F0083B5A5 /* NetworkService+Product.swift */; };
+		029C1C6E2BFCCEAA0083B5A5 /* ProductListingViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C6D2BFCCEAA0083B5A5 /* ProductListingViewModelImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +118,6 @@
 		029C1C122BFBBE470083B5A5 /* NetworkServiceConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceConfig.swift; sourceTree = "<group>"; };
 		029C1C1F2BFBD1C90083B5A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		029C1C222BFBD33F0083B5A5 /* ProductListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewController.swift; sourceTree = "<group>"; };
-		029C1C262BFBD3850083B5A5 /* ProductListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModel.swift; sourceTree = "<group>"; };
 		029C1C292BFBD7070083B5A5 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		029C1C2C2BFBD72F0083B5A5 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		029C1C302BFBD7B10083B5A5 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +138,11 @@
 		029C1C5A2BFCB6AC0083B5A5 /* ProductListingViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewCellDelegate.swift; sourceTree = "<group>"; };
 		029C1C5C2BFCBBE70083B5A5 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		029C1C5E2BFCBCE80083B5A5 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		029C1C612BFCCBCB0083B5A5 /* ProductListingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingRepository.swift; sourceTree = "<group>"; };
+		029C1C632BFCCBD50083B5A5 /* ProductListingRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingRepositoryImpl.swift; sourceTree = "<group>"; };
+		029C1C662BFCCBF30083B5A5 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		029C1C6B2BFCCD5F0083B5A5 /* NetworkService+Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Product.swift"; sourceTree = "<group>"; };
+		029C1C6D2BFCCEAA0083B5A5 /* ProductListingViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModelImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,9 +244,8 @@
 		029C1BD02BFBAD080083B5A5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				029C1C362BFC8E7F0083B5A5 /* Constant */,
+				029C1C682BFCCCBD0083B5A5 /* Basics */,
 				029C1C142BFBBE470083B5A5 /* Network */,
-				029C1BF52BFBB3E40083B5A5 /* Extension */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -274,6 +281,8 @@
 		029C1BD52BFBAD300083B5A5 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				029C1C652BFCCBE80083B5A5 /* Base */,
+				029C1C602BFCCBBB0083B5A5 /* ProductListingRepository */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -419,6 +428,7 @@
 		029C1C132BFBBE470083B5A5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				029C1C692BFCCD310083B5A5 /* Services */,
 				029C1C102BFBBE470083B5A5 /* NetworkService.swift */,
 				029C1C122BFBBE470083B5A5 /* NetworkServiceConfig.swift */,
 			);
@@ -454,7 +464,7 @@
 		029C1C252BFBD3650083B5A5 /* ProductListing */ = {
 			isa = PBXGroup;
 			children = (
-				029C1C262BFBD3850083B5A5 /* ProductListingViewModel.swift */,
+				029C1C6D2BFCCEAA0083B5A5 /* ProductListingViewModelImpl.swift */,
 			);
 			path = ProductListing;
 			sourceTree = "<group>";
@@ -542,6 +552,40 @@
 				029C1C5A2BFCB6AC0083B5A5 /* ProductListingViewCellDelegate.swift */,
 			);
 			path = ProductListingViewCell;
+			sourceTree = "<group>";
+		};
+		029C1C602BFCCBBB0083B5A5 /* ProductListingRepository */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C612BFCCBCB0083B5A5 /* ProductListingRepository.swift */,
+				029C1C632BFCCBD50083B5A5 /* ProductListingRepositoryImpl.swift */,
+			);
+			path = ProductListingRepository;
+			sourceTree = "<group>";
+		};
+		029C1C652BFCCBE80083B5A5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C662BFCCBF30083B5A5 /* BaseRepository.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		029C1C682BFCCCBD0083B5A5 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C362BFC8E7F0083B5A5 /* Constant */,
+				029C1BF52BFBB3E40083B5A5 /* Extension */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		029C1C692BFCCD310083B5A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				029C1C6B2BFCCD5F0083B5A5 /* NetworkService+Product.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -690,9 +734,9 @@
 				029C1C312BFBD7B10083B5A5 /* BasketViewController.swift in Sources */,
 				029C1C192BFBBE470083B5A5 /* NetworkRequest.swift in Sources */,
 				029C1BDF2BFBB0570083B5A5 /* BaseViewController.swift in Sources */,
-				029C1C272BFBD3850083B5A5 /* ProductListingViewModel.swift in Sources */,
 				029C1C512BFCA9700083B5A5 /* ProductListingViewDelegate.swift in Sources */,
 				029C1C5B2BFCB6AC0083B5A5 /* ProductListingViewCellDelegate.swift in Sources */,
+				029C1C6C2BFCCD5F0083B5A5 /* NetworkService+Product.swift in Sources */,
 				029C1C2A2BFBD7070083B5A5 /* ProductDetailViewController.swift in Sources */,
 				029C1C542BFCA9BD0083B5A5 /* ProductListingViewCell.swift in Sources */,
 				029C1C4B2BFC9DFE0083B5A5 /* UIView+Extension.swift in Sources */,
@@ -702,16 +746,19 @@
 				029C1C382BFC8E8B0083B5A5 /* Constant.swift in Sources */,
 				029C1C4F2BFCA9550083B5A5 /* ProductListingView.swift in Sources */,
 				029C1C182BFBBE470083B5A5 /* NetworkHttpType.swift in Sources */,
+				029C1C642BFCCBD50083B5A5 /* ProductListingRepositoryImpl.swift in Sources */,
 				029C1BEC2BFBB2090083B5A5 /* Font.swift in Sources */,
 				029C1BA62BFBAC9C0083B5A5 /* EMarket.xcdatamodeld in Sources */,
 				029C1C332BFBD7D00083B5A5 /* BasketViewModel.swift in Sources */,
 				029C1C352BFBD9AF0083B5A5 /* ImageAsset.swift in Sources */,
 				029C1C1B2BFBBE470083B5A5 /* NetworkManagerProtocol.swift in Sources */,
 				029C1C3A2BFC8EB20083B5A5 /* Constant+Defaults.swift in Sources */,
+				029C1C622BFCCBCC0083B5A5 /* ProductListingRepository.swift in Sources */,
 				029C1C1A2BFBBE470083B5A5 /* NetworkManager.swift in Sources */,
 				029C1C1E2BFBBE470083B5A5 /* NetworkServiceConfig.swift in Sources */,
 				029C1BDB2BFBAD8D0083B5A5 /* MainTabBarController.swift in Sources */,
 				029C1B9C2BFBAC9C0083B5A5 /* AppDelegate.swift in Sources */,
+				029C1C6E2BFCCEAA0083B5A5 /* ProductListingViewModelImpl.swift in Sources */,
 				029C1C152BFBBE470083B5A5 /* NetworkError.swift in Sources */,
 				029C1C1C2BFBBE470083B5A5 /* NetworkService.swift in Sources */,
 				029C1B9E2BFBAC9C0083B5A5 /* SceneDelegate.swift in Sources */,
@@ -724,6 +771,7 @@
 				029C1C5D2BFCBBE70083B5A5 /* UICollectionView+Extension.swift in Sources */,
 				029C1C032BFBB8A50083B5A5 /* String+Localization.swift in Sources */,
 				029C1C2D2BFBD72F0083B5A5 /* ProductDetailViewModel.swift in Sources */,
+				029C1C672BFCCBF30083B5A5 /* BaseRepository.swift in Sources */,
 				029C1C172BFBBE470083B5A5 /* NetworkResult.swift in Sources */,
 				029C1C402BFC95590083B5A5 /* BaseView.swift in Sources */,
 				029C1C572BFCAAC60083B5A5 /* Product.swift in Sources */,

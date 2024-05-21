@@ -16,6 +16,8 @@ final class ProductListingViewCell: UICollectionViewCell {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = contentVStackViewSpacing
+        stackView.distribution = .fill
+        stackView.alignment = .fill
         return stackView
     }()
     
@@ -71,6 +73,7 @@ final class ProductListingViewCell: UICollectionViewCell {
             )
         )
         button.setAttributedTitle(attributedString, for: .normal)
+        button.layerCornerRadius = 6.0
         return button
     }()
     
@@ -96,6 +99,11 @@ final class ProductListingViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: layer.cornerRadius).cgPath
+    }
 }
 
 // MARK: - Configure UI
@@ -111,11 +119,22 @@ extension ProductListingViewCell {
 // MARK: - Setup UI
 private extension ProductListingViewCell {
     func setupUI() {
+        addShadowToCell()
         setupContentVStackView()
         setupProductImageView()
         setupProductCurrentPriceLabel()
         setupProductNameLabel()
         setupAddToCartButton()
+    }
+    
+    func addShadowToCell() {
+        backgroundColor = .white
+        layer.shadowColor = UIColor.gray500.cgColor
+        layer.shadowOpacity = 1
+        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowRadius = 2
+        layer.masksToBounds = false
+        layer.zPosition = 1
     }
     
     func setupContentVStackView() {
@@ -129,7 +148,7 @@ private extension ProductListingViewCell {
     }
     
     func setupProductImageView() {
-        contentVStackView.addSubview(productImageView)
+        contentVStackView.addArrangedSubview(productImageView)
         productImageView.heightAnchor.constraint(equalTo: contentVStackView.widthAnchor).isActive = true
     }
     
