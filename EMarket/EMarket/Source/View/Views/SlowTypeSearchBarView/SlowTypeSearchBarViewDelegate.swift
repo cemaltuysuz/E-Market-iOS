@@ -6,3 +6,9 @@
 //
 
 import Foundation
+ 
+// MARK: - SlowTypeSearchBarViewDelegate
+protocol SlowTypeSearchBarViewDelegate: AnyObject {
+    func slowTypeSearchBarView(view: SlowTypeSearchBarView, search text: String)
+    func slowTypeSearchBarView(completed view: SlowTypeSearchBarView)
+}

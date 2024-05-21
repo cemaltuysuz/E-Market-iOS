@@ -18,3 +18,5 @@
 "network.backend_did_not_response_ok" = "Bir hata oluştu, lütfen daha sonra tekrar deneyiniz. (-1)";
 "network.response_model_could_not_parsed" = "Bir hata oluştu, lütfen daha sonra tekrar deneyiniz. (-2)";
 
+// MARK: - Product Listing
+"product_listing.search_bar.placeholder_text" = "Ara";

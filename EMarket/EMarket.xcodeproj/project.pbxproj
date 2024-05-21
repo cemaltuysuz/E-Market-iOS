@@ -50,6 +50,7 @@
 		029C1C402BFC95590083B5A5 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C3F2BFC95590083B5A5 /* BaseView.swift */; };
 		029C1C472BFC98410083B5A5 /* SlowTypeSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C462BFC98410083B5A5 /* SlowTypeSearchBarView.swift */; };
 		029C1C492BFC98540083B5A5 /* SlowTypeSearchBarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C482BFC98540083B5A5 /* SlowTypeSearchBarViewDelegate.swift */; };
+		029C1C4B2BFC9DFE0083B5A5 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C4A2BFC9DFE0083B5A5 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		029C1C3F2BFC95590083B5A5 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		029C1C462BFC98410083B5A5 /* SlowTypeSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowTypeSearchBarView.swift; sourceTree = "<group>"; };
 		029C1C482BFC98540083B5A5 /* SlowTypeSearchBarViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowTypeSearchBarViewDelegate.swift; sourceTree = "<group>"; };
+		029C1C4A2BFC9DFE0083B5A5 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +353,7 @@
 			children = (
 				029C1BF62BFBB3F10083B5A5 /* UIImageView+Extension.swift */,
 				029C1C022BFBB8A50083B5A5 /* String+Localization.swift */,
+				029C1C4A2BFC9DFE0083B5A5 /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -577,7 +580,7 @@
 			};
 			buildConfigurationList = 029C1B932BFBAC9C0083B5A5 /* Build configuration list for PBXProject "EMarket" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = tr;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -641,6 +644,7 @@
 				029C1BDF2BFBB0570083B5A5 /* BaseViewController.swift in Sources */,
 				029C1C272BFBD3850083B5A5 /* ProductListingViewModel.swift in Sources */,
 				029C1C2A2BFBD7070083B5A5 /* ProductDetailViewController.swift in Sources */,
+				029C1C4B2BFC9DFE0083B5A5 /* UIView+Extension.swift in Sources */,
 				029C1C052BFBBC3D0083B5A5 /* ViewModel.swift in Sources */,
 				029C1BF72BFBB3F10083B5A5 /* UIImageView+Extension.swift in Sources */,
 				029C1C162BFBBE470083B5A5 /* NetworkErrorModel.swift in Sources */,

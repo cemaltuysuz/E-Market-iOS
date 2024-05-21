@@ -17,3 +17,7 @@
 "network.error.try_again" = "An error occured and this operation has been failed. Do you want to try again ?";
 "network.backend_did_not_response_ok" = "An error occured. Please try again. (-1)";
 "network.response_model_could_not_parsed" = "An error occured. Please try again. (-2)";
+
+// MARK: - Product Listing
+"product_listing.search_bar.placeholder_text" = "Search";
+

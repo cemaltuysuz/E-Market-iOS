@@ -19,6 +19,12 @@ open class BaseView: UIView {
     
     open var clickedView: (()->Void)?
     
+    // MARK: - Private
+    private var didTapRecognizer: UITapGestureRecognizer = {
+        let recognizer = UITapGestureRecognizer(target: BaseView.self, action: #selector(didTapView))
+        return recognizer
+    }()
+    
     // MARK: - Initializers
     init(
         isClickable: Bool = false
@@ -42,17 +48,12 @@ open class BaseView: UIView {
 private extension BaseView {
     func configureClickable(value: Bool? = nil) {
         let isClickable = value ?? isClickable
-        isUserInteractionEnabled = isClickable
         
         guard !isClickable else {
-            let recognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTapView))
-            addGestureRecognizer(recognizer)
+            addGestureRecognizer(didTapRecognizer)
             return
         }
-        
-        for recognizer in (gestureRecognizers ?? []) {
-            removeGestureRecognizer(recognizer)
-        }
+        removeGestureRecognizer(didTapRecognizer)
     }
 }
 
