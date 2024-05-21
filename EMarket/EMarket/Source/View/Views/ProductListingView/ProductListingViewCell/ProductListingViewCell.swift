@@ -99,11 +99,12 @@ final class ProductListingViewCell: UICollectionViewCell {
 }
 
 // MARK: - Configure UI
-private extension ProductListingViewCell {
-    func configure(with product: Product) {
-        productImageView.loadImage(with: product.image)
-        productNameLabel.text = product.name
-        productCurrentPriceLabel.text = product.price
+extension ProductListingViewCell {
+    func configure(with product: Product?) {
+        self.product = product
+        productImageView.loadImage(with: product?.image)
+        productNameLabel.text = product?.name
+        productCurrentPriceLabel.text = product?.price
     }
 }
 

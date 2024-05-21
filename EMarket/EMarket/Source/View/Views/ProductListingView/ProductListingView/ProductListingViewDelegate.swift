@@ -9,5 +9,5 @@ import Foundation
 
 // MARK: - ProductListingViewDelegate
 protocol ProductListingViewDelegate: AnyObject {
-    func productListingView(view: ProductListingView)
+    func productListingView(view: ProductListingView, routeTo product: Product)
 }

@@ -57,6 +57,8 @@
 		029C1C572BFCAAC60083B5A5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C562BFCAAC60083B5A5 /* Product.swift */; };
 		029C1C592BFCACB40083B5A5 /* UIColor+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C582BFCACB40083B5A5 /* UIColor+UIImage.swift */; };
 		029C1C5B2BFCB6AC0083B5A5 /* ProductListingViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C5A2BFCB6AC0083B5A5 /* ProductListingViewCellDelegate.swift */; };
+		029C1C5D2BFCBBE70083B5A5 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C5C2BFCBBE70083B5A5 /* UICollectionView+Extension.swift */; };
+		029C1C5F2BFCBCE80083B5A5 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C1C5E2BFCBCE80083B5A5 /* Collection+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		029C1C562BFCAAC60083B5A5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		029C1C582BFCACB40083B5A5 /* UIColor+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UIImage.swift"; sourceTree = "<group>"; };
 		029C1C5A2BFCB6AC0083B5A5 /* ProductListingViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewCellDelegate.swift; sourceTree = "<group>"; };
+		029C1C5C2BFCBBE70083B5A5 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		029C1C5E2BFCBCE80083B5A5 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +373,8 @@
 				029C1C022BFBB8A50083B5A5 /* String+Localization.swift */,
 				029C1C4A2BFC9DFE0083B5A5 /* UIView+Extension.swift */,
 				029C1C582BFCACB40083B5A5 /* UIColor+UIImage.swift */,
+				029C1C5C2BFCBBE70083B5A5 /* UICollectionView+Extension.swift */,
+				029C1C5E2BFCBCE80083B5A5 /* Collection+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -714,6 +720,8 @@
 				029C1C592BFCACB40083B5A5 /* UIColor+UIImage.swift in Sources */,
 				029C1C492BFC98540083B5A5 /* SlowTypeSearchBarViewDelegate.swift in Sources */,
 				029C1C3E2BFC91C90083B5A5 /* BaseNavigationController.swift in Sources */,
+				029C1C5F2BFCBCE80083B5A5 /* Collection+Extension.swift in Sources */,
+				029C1C5D2BFCBBE70083B5A5 /* UICollectionView+Extension.swift in Sources */,
 				029C1C032BFBB8A50083B5A5 /* String+Localization.swift in Sources */,
 				029C1C2D2BFBD72F0083B5A5 /* ProductDetailViewModel.swift in Sources */,
 				029C1C172BFBBE470083B5A5 /* NetworkResult.swift in Sources */,
