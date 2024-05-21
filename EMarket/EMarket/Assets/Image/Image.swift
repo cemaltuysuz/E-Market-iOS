@@ -40,6 +40,7 @@ final class Image {
                 let image = value.image
                 completionHandler(image)
             case .failure(let error):
+                print("An error received while image fetching: \(error.localizedDescription)")
                 completionHandler(nil)
             }
         }

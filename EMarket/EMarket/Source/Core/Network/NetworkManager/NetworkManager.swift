@@ -118,7 +118,7 @@ private extension NetworkManager {
     func log(response: URLResponse?, data: Data?, error: Error?) {
         print("\n - - - - - - - - - - INCOMMING - - - - - - - - - - \n")
         
-        guard var response = response as? HTTPURLResponse else{
+        guard let response = response as? HTTPURLResponse else{
             print("Response couldnt convert to HTTPURLResponse")
             return
         }
